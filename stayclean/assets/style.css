@@ -9,6 +9,23 @@
 #textarea{
   height: 10rem;
 }
+/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none !important;
+} */
+ /* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+input[type=number]{
+  -moz-appearance: textfield !important;
+} */
+.jq-number__spin{
+  /* -webkit-appearance: none !important; */
+  /* display: none;
+ visibility: hidden; */
+}
 
 @media only screen and (max-width: 768px) {
     .header1 {
@@ -18,7 +35,7 @@
        visibility: hidden;
      }
      #hero-booking{
-      visibility: visible;
+      display: block;
   
     }
     #hero-heading{
