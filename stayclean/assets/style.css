@@ -1,6 +1,11 @@
 .header1{
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50% !important;
+}
+.cid-sygrnjeF5O{
+  border-bottom-right-radius: 50% !important;
+}
+.book-header{
+  text-align: center !important;
 }
 #hero-booking{
  display: none;
@@ -9,36 +14,61 @@
 #textarea{
   height: 10rem;
 }
-/* input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button { 
-	-webkit-appearance: none !important;
-} */
- /* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
+#delivery-flex{
+  display: flex !important;
+  width: 100% !important;
 }
-input[type=number]{
-  -moz-appearance: textfield !important;
-} */
-.jq-number__spin{
-  /* -webkit-appearance: none !important; */
-  /* display: none;
- visibility: hidden; */
+#delivery-flex div{
+  width: 50% !important;
+}
+#service-selection{
+  display: grid !important;
+  width: 100% !important;
+  padding-left: 1em;
+  grid-template-columns: 1fr 1fr;
+   font-size: 1.2em;
+}
+.btns{
+  background-color: #1045a9;
+  color: #fff;
+}
+input[type=text], input[type=number] ,input[type=date],input[type=tel],input[type=email],textarea{
+  border: 0 !important;
+  outline: 0 !important;
+  outline: none !important;
+  border-bottom:2px solid #1045a9 !important;
+  border-top: 0 !important;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+input[type=checkbox]:checked +label{
+  color: #1045a9 !important;
+}
+.service{
+  font-size: 1.2em;
 }
 
+
 @media only screen and (max-width: 768px) {
-    .header1 {
-      border-radius:0%;
-    } 
-     #hero-book-now-btn{
-       visibility: hidden;
-     }
-     #hero-booking{
-      display: block;
-  
-    }
-    #hero-heading{
-      display: none;
-    }
+  .header1 {
+    border-bottom-right-radius: 50% !important;
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.2)),
+    url("images/image-4-540x564.png")
+      bottom right no-repeat !important;
+    background-size: cover;
+    background-color: #fff;
+  } 
+  .cid-syh8nqKg9S .mbr-iconfont{
+    font-size: 3rem !important;
+  }
+  #hero-book-now-btn{
+    visibility: hidden;
+  }
+  #hero-booking{
+  display: block;
+
+  }
+  #hero-heading{
+    display: none;
+  }
 }           

@@ -87,7 +87,7 @@
 
                     <p class="mbr-text mbr-fonts-style display-7">
                         Hire Swift and Professional Cleaning Services from the comfort of your home.</p>
-                    <div class="mbr-section-btn mt-3" id="hero-book-now-btn"><a class="btn btn-secondary display-4" href="index.html#form3-a">BOOK NOW</a></div>
+                    <div class="mbr-section-btn mt-3" id="hero-book-now-btn"><a class="btn display-4 btns" href="index.html#form3-a">BOOK NOW</a></div>
                 </div>
                 <!-- Booking -->
                 <div class="col-lg-6 mbr-form" data-form-type="formoid1" id="hero-booking">
@@ -97,37 +97,72 @@
                             <div id="error_message"></div>
                         </div>
                         <div class="dragArea row">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 book-header">
                                 <h1 class="mbr-section-title mb-4 display-2">
-                                    <strong>Book Now</strong></h1>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p class="mbr-text mbr-fonts-style mb-4 display-7">Fill this form and we'll get back to you soon.
-                                </p>
+                                    <strong>Hire Professional Cleaning Services</strong></h1>
+                                    <p>fill in this form to book our services</p>
                             </div>
                             <div data-for="name" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="booking-name">
+                                <label for="name" class="col-form-label">Name</label>
+                                <input type="text" name="name" 
+                                placeholder="Jane Doe"
+                                data-form-field="name" class="form-control" value="" id="booking-name">
                             </div>
                             <div data-for="location" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="location" placeholder="Location" data-form-field="name" class="form-control" value="" id="booking-location">
+                                <label for="location" class="col-form-label">Location</label>
+                                <input type="text" name="location"
+                                placeholder="Your Location"
+                                data-form-field="location" class="form-control" value="" id="booking-location">
                             </div>
                             <div data-for="phoneNumber" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="tel" name="phoneNumber" placeholder="Phone Number" data-form-field="phoneNumber" class="form-control" value="" id="booking-phone">
+                                <label for="phoneNumber" class="col-form-label">Phone Number</label>
+                                <input type="tel" name="phoneNumber" 
+                                placeholder="Your Phone Number"
+                                data-form-field="phoneNumber" class="form-control" value="" id="booking-phone">
                             </div>
-                            <div data-for="pickUpDate" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="pickUpDate" placeholder="Pickup Date" data-form-field="pickUpDate" class="form-control" value="" id="booking-pick-up" onfocus="(this.type='date')">
+                            
+                                <div id="delivery-flex">
+                                    <div data-for="pickUpDate" class="col-lg-6 col-md col-sm-6 col-xs-2 form-group">
+                                        <label for="pickUpDate" class=" col-form-label">Pickup Date</label>
+                                        <input type="date" name="pickUpDate" 
+                                        data-form-field="pickUpDate" class="form-control" value="" id="booking-pick-up">
+                                    </div>
+                                    <div data-for="deliveryDate" class="col-lg-6 col-md col-sm-6 col-xs-2 form-group">
+                                        <label for="deliveryDate" class="col-form-label">Delivery Date</label>
+                                        <input type="date" name="deliveryDate" placeholder="Delivery Date" data-form-field="deliveryDate" class="form-control" value="" id="booking-delivery-date">
+                                    </div>
+                                </div>
+                            
+                            <!-- <div data-for="servicePreference" class="col-lg-12 col-md col-sm-12 form-group">
+                                <label for="servicePreference" class="col-form-label">Service Preferences</label>
+                                <input type="text" name="servicePreference" data-form-field="servicePreference" class="form-control" value="" id="booking-service-preference">
+                            </div> -->
+                            <label for="servicePreference" class="col-form-label service">Service Preferences</label>
+                            <div  id="service-selection">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="dryCleaning" name="servicePreference[]" value="Dry cleaning & Laundry">
+                                    <label class="custom-control-label" for="dryCleaning">Dry cleaning & Laundry</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="cleaning&Outsourcing" name="servicePreference[]" value="Cleaning & Outsourcing">
+                                    <label class="custom-control-label" for="cleaning&Outsourcing">Cleaning & Outsourcing</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="fumigation" name="servicePreference[]" value="Fumigation & Pest Control">
+                                    <label class="custom-control-label" for="fumigation">Fumigation & Pest Control</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="interior" name="servicePreference[]" value="Interior & Exterior Decoration">
+                                    <label class="custom-control-label" for="interior">Interior & Exterior Decoration</label>
+                                </div>
                             </div>
-                            <div data-for="deliveryDate" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="deliveryDate" placeholder="Delivery Date" data-form-field="deliveryDate" class="form-control" value="" id="booking-delivery-date" onfocus="(this.type='date')">
-                            </div>
-                            <div data-for="servicePreference" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="servicePreference" placeholder="Service Preference" data-form-field="servicePreference" class="form-control" value="" id="booking-service-preference">
-                            </div>
+           
                             <div class="col-lg-12 col-md col-sm-12 form-group" data-for="piecesOfClothes">
-                                <input type="text" name="piecesOfClothes" placeholder="Pieces Of Clothes" data-form-field="piecesOfClothes" class="form-control" value="" id="booking-pieces-of-clothes" onfocus="(this.type='number')">
+                                <label for="piecesOfClothes" class="col-form-label">Pieces of Clothes</label>
+                                <input type="text" name="piecesOfClothes" data-form-field="piecesOfClothes" class="form-control" value="" id="booking-pieces-of-clothes" onfocus="(this.type='number')">
                             </div>
                             <div class="col-md-auto col-12 mbr-section-btn">
-                                <button type="submit" class="btn btn-black display-4">Submit</button>
+                                <button type="submit" class="btn display-4 btns">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -305,37 +340,71 @@
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12" id="error_message"></div>
                         </div>
                         <div class="dragArea row">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 book-header">
                                 <h1 class="mbr-section-title mb-4 display-2">
-                                    <strong>Book Now</strong></h1>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p class="mbr-text mbr-fonts-style mb-4 display-7">Fill this form and we'll get back to you soon.
-                                </p>
+                                    <strong>Hire Professional Cleaning Services</strong></h1>
+                                    <p>fill in this form to book our services</p>
                             </div>
                             <div data-for="name" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="booking-name">
+                                <label for="name" class="col-form-label">Name</label>
+                                <input type="text" name="name" 
+                                placeholder="Jane Doe"
+                                data-form-field="name" class="form-control" value="" id="booking-name">
                             </div>
                             <div data-for="location" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="location" placeholder="Location" data-form-field="name" class="form-control" value="" id="booking-location">
+                                <label for="location" class="col-form-label">Location</label>
+                                <input type="text" name="location" 
+                                placeholder="Location"
+                                data-form-field="location" class="form-control" value="" id="booking-location">
                             </div>
                             <div data-for="phoneNumber" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="tel" name="phoneNumber" placeholder="Phone Number" data-form-field="phoneNumber" class="form-control" value="" id="booking-phone">
+                                <label for="phoneNumber" class="col-form-label">Phone Number</label>
+                                <input type="tel" name="phoneNumber" data-form-field="phoneNumber" 
+                                placeholder="Your Phone Number"
+                                class="form-control" value="" id="booking-phone">
                             </div>
-                            <div data-for="pickUpDate" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="pickUpDate" placeholder="Pickup Date" data-form-field="pickUpDate" class="form-control" value="" id="booking-pick-up" onfocus="(this.type='date')">
-                            </div>
-                            <div data-for="deliveryDate" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="deliveryDate" placeholder="Delivery Date" data-form-field="deliveryDate" class="form-control" value="" id="booking-delivery-date" onfocus="(this.type='date')">
-                            </div>
-                            <div data-for="servicePreference" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="servicePreference" placeholder="Service Preference" data-form-field="servicePreference" class="form-control" value="" id="booking-service-preference">
+                            
+                                <div id="delivery-flex">
+                                    <div data-for="pickUpDate" class="col-lg-6 col-md col-sm-6 col-xs-2 form-group">
+                                        <label for="pickUpDate" class=" col-form-label">Pickup Date</label>
+                                        <input type="date" name="pickUpDate" data-form-field="pickUpDate" 
+                                        placeholder="Pickup Date"class="form-control" value="" id="booking-pick-up">
+                                    </div>
+                                    <div data-for="deliveryDate" class="col-lg-6 col-md col-sm-6 col-xs-2 form-group">
+                                        <label for="deliveryDate" class="col-form-label">Delivery Date</label>
+                                        <input type="date" name="deliveryDate" placeholder="Delivery Date" data-form-field="deliveryDate" class="form-control" value="" id="booking-delivery-date">
+                                    </div>
+                                </div>
+                            
+                            <!-- <div data-for="servicePreference" class="col-lg-12 col-md col-sm-12 form-group">
+                                <label for="servicePreference" class="col-form-label">Service Preferences</label>
+                                <input type="text" name="servicePreference" data-form-field="servicePreference" class="form-control" value="" id="booking-service-preference">
+                            </div> -->
+                            <label for="servicePreference" class="col-form-label service">Service Preferences</label>
+                            <div  id="service-selection">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="dryCleaning1" name="servicePreference[]" value="Dry cleaning & Laundry">
+                                    <label class="custom-control-label" for="dryCleaning1">Dry cleaning & Laundry</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="cleaning&Outsourcing1" name="servicePreference[]" value="Cleaning & Outsourcing">
+                                    <label class="custom-control-label" for="cleaning&Outsourcing1">Cleaning & Outsourcing</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="fumigation1" name="servicePreference[]" value="Fumigation & Pest Control">
+                                    <label class="custom-control-label" for="fumigation1">Fumigation & Pest Control</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="interior1" name="servicePreference[]" value="Interior & Exterior Decoration">
+                                    <label class="custom-control-label" for="interior1">Interior & Exterior Decoration</label>
+                                </div>
                             </div>
                             <div class="col-lg-12 col-md col-sm-12 form-group" data-for="piecesOfClothes">
-                                <input type="text" name="piecesOfClothes" placeholder="Pieces Of Clothes" data-form-field="piecesOfClothes" class="form-control" value="" id="booking-pieces-of-clothes" onfocus="(this.type='number')">
+                                <label for="piecesOfClothes" class="col-form-label">Pieces of Clothes</label>
+                                <input type="text" name="piecesOfClothes" data-form-field="piecesOfClothes" class="form-control" value="" id="booking-pieces-of-clothes" onfocus="(this.type='number')">
                             </div>
                             <div class="col-md-auto col-12 mbr-section-btn">
-                                <button type="submit" class="btn btn-black display-4">Submit</button>
+                                <button type="submit" class="btn display-4 btns">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -503,19 +572,28 @@
                                 <p class="mbr-text mbr-fonts-style mb-4 display-7">Fill this form and we'll get back to you soon.</p>
                             </div>
                             <div data-for="name" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="text" name="fullname" placeholder="Full Name" data-form-field="fullname" class="form-control" value="" id="contact-name">
+                                <label for="contact-name" class="col-form-label">Full Name</label>
+                                <input type="text" name="fullname" 
+                                placeholder="John Doe"
+                                data-form-field="fullname" class="form-control" value="" id="contact-name">
                             </div>
                             <div data-for="email" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="email" name="email" placeholder="Email Address" data-form-field="email" class="form-control" value="" id="contact-email">
+                                <label for="contact-email" class="col-form-label">Email Address</label>
+                                <input type="email" name="email" 
+                                placeholder="you@email.com"
+                                data-form-field="email" class="form-control" value="" id="contact-email">
                             </div>
                             <div data-for="phoneNumber" class="col-lg-12 col-md col-sm-12 form-group">
-                                <input type="tel" name="phoneNumber" placeholder="Phone Number" data-form-field="phoneNumber" class="form-control" value="" id="contact-phone">
+                                <label for="contact-phone" class="col-form-label">Phone Number</label>
+                                <input type="tel" name="phoneNumber" 
+                                placeholder="Phone Number"
+                                data-form-field="phoneNumber" class="form-control" value="" id="contact-phone">
                             </div>
                             <div data-for="message" class="col-lg-12 col-md col-sm-12 form-group">
                                 <textarea name="message" placeholder="Message" data-form-field="message" class="form-control" value="" id="contact-message" required></textarea>
                             </div>
                             <div class="col-12 col-md-auto mbr-section-btn">
-                                <button type="submit" class="btn btn-secondary display-4">Submit</button>
+                                <button type="submit" class="btn display-4 btns">Submit</button>
                             </div>
                         </div>
                     </form>
